@@ -1,0 +1,110 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="J.R. – Web Developer Portfolio & Digital Products" />
+    <meta property="og:title" content="J.R. – Developer Portfolio" />
+    <meta property="og:description" content="Websites, Funnels, and Digital Products built for performance and style." />
+    <meta property="og:image" content="/og-image.png" />
+    <title>J.R. | Developer & Digital Creator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-gray-100 font-sans">
+    <!-- Header -->
+    <header class="p-6 flex justify-between items-center border-b border-gray-800">
+      <h1 class="text-xl font-bold">jrafcrz<span class="text-indigo-500">.work</span></h1>
+      <nav class="space-x-6">
+        <a href="#services" class="hover:text-indigo-400 transition">Services</a>
+        <a href="#products" class="hover:text-indigo-400 transition">Products</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center justify-center text-center px-4">
+      <div>
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">Beautiful websites. No fluff.</h2>
+        <p class="text-lg text-gray-400 mb-6 animate-fade-in delay-100">Performance-focused, agency-quality sites and templates for real business goals.</p>
+        <a href="#products" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold transition animate-fade-in delay-200">Browse Products</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-6 py-16 border-t border-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10">Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 p-6 rounded-2xl shadow-lg transition transform hover:-translate-y-1">
+            <h4 class="text-xl font-semibold mb-2">Elementor Pro</h4>
+            <p class="text-gray-400">Custom WordPress sites using Elementor Pro + performance optimizations.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-2xl shadow-lg transition transform hover:-translate-y-1">
+            <h4 class="text-xl font-semibold mb-2">Webflow</h4>
+            <p class="text-gray-400">Modern CMS-based designs with animation and responsiveness in mind.</p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-2xl shadow-lg transition transform hover:-translate-y-1">
+            <h4 class="text-xl font-semibold mb-2">GoHighLevel Funnels</h4>
+            <p class="text-gray-400">CRM-integrated funnels for lead gen, automations, and conversion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="px-6 py-16 border-t border-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10">Digital Products (Coming Soon)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+            <div class="h-32 bg-gray-800 rounded mb-4"></div>
+            <h4 class="text-lg font-semibold">Webflow CMS Starter</h4>
+            <p class="text-sm text-gray-400">Clean structure, responsive layout, and CMS-ready components.</p>
+          </div>
+          <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+            <div class="h-32 bg-gray-800 rounded mb-4"></div>
+            <h4 class="text-lg font-semibold">Elementor Pro Template Kit</h4>
+            <p class="text-sm text-gray-400">Global styles, section templates, and Woo-ready elements.</p>
+          </div>
+          <div class="bg-gray-900 p-4 rounded-xl border border-gray-700">
+            <div class="h-32 bg-gray-800 rounded mb-4"></div>
+            <h4 class="text-lg font-semibold">GoHighLevel Funnel</h4>
+            <p class="text-sm text-gray-400">Plug-and-play lead generation funnel built for service businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-16 border-t border-gray-800 text-center">
+      <h3 class="text-3xl font-bold mb-4">Let’s Connect</h3>
+      <p class="text-gray-400 mb-6">Open to freelance work, partnerships, or just saying hey.</p>
+      <p class="text-indigo-400"><a href="mailto:hello@jrafcrz.work">hello@jrafcrz.work</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-sm text-gray-600 border-t border-gray-800">
+      © 2025 J.R. All rights reserved.
+    </footer>
+
+    <script>
+      // Simple fade-in animations
+      document.querySelectorAll('.animate-fade-in').forEach((el, i) => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          el.style.transition = 'all 0.8s ease';
+          el.style.opacity = 1;
+          el.style.transform = 'translateY(0)';
+        }, 300 * i);
+      });
+    </script>
+  </body>
+</html>
